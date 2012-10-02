@@ -433,6 +433,12 @@ public interface Connection {
         public String charset();
 
         /**
+         * Set the character set name of the response.
+         * @return this Response, for chaining
+         */
+        public Response charset(String charset);
+
+        /**
          * Get the response content type (e.g. "text/html");
          * @return the response content type
          */
